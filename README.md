@@ -1,16 +1,10 @@
-meteor-howler [![Build Status](https://travis-ci.org/ovcharik/meteor-howler.svg)](https://travis-ci.org/ovcharik/meteor-howler)
+meteor-validator
 =============
 
-Howler for Meteor.
+validator.js packaged for Meteor.
 
 
-Howler repository
+validator.js repository
 -----------------
 
-https://github.com/goldfire/howler.js/
-
-
-Examples
---------
-
-http://howlerjs.com
+https://github.com/chriso/validator.js
