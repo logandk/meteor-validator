@@ -1,22 +1,14 @@
 Package.describe({
-  name:    "ovcharik:howler",
-  summary: "Javascript audio library for the modern web.",
-  version: "1.1.26",
-  git:     "https://github.com/ovcharik/meteor-howler"
+  name:    'logandk:validator',
+  summary: 'String validation and sanitization',
+  version: '3.34.0',
+  git:     'https://github.com/logandk/meteor-validator'
 });
 
 Package.on_use(function (api) {
-  if (api.versionsFrom)
-    api.versionsFrom('METEOR@0.9.0');
-
-  api.add_files('vendor/howler.js', 'client');
-  api.add_files('export.js', 'client');
-
-  if (api.export)
-    api.export(['Howler', 'Howl'], ['client']);
-});
-
-Package.on_test(function (api) {
-  api.use(['ovcharik:howler', 'underscore', 'tinytest', 'test-helpers'], ['client']);
-  api.add_files(['howler-tests.js'], ['client']);
+  api.export('validator');
+  api.add_files([
+    'vendor/validator.js',
+    'export.js'
+  ]);
 });

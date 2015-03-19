@@ -1,4 +1,2 @@
-if (typeof Package !== "undefined") {
-  Howler = this.Howler;
-  Howl   = this.Howl;
-}
+validator = this.validator;
+delete this.validator;
